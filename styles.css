@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Roboto",sans-serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+button:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.nav{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black
+}
+
+.nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav .links a{
+    border-bottom: 2px solid white;
+    transition: border 0.3s ease;
+}
+
+.nav .links a:hover{
+    border-bottom: 2px solid black;
+}
+
+.swiper{
+    overflow-x: hidden;
+    width: 100%;
+    height: 77%;
+}
+
+.swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.quote{
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#author{
+    margin-left: 35rem;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    margin: 5rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+.featured{
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.cards{
+    margin: 5%;
+    display: flex;
+    gap: 1rem;
+}
+
+.featured-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    button{
+        width: 65%;
+    }
+}
+
+
+.featured-card img{
+    width: 90%;
+}
+
+.reviews-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 15%;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+.reviews{
+    display: flex;
+    gap: 5%;
+}
+
+.review{
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.review img{
+    width: 50%;
+}
+
+.review:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+.footer{
+    padding: 5%;
+    background-color: black;
+    color: white;
+    a{
+        color: white;
+    }
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.recipes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2%;
+    background-color: antiquewhite;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5%;
+}
+
+.filter{
+    border-radius: 10px;
+    width: 100%;
+    button{
+        width: 100%;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+    .active{
+        color: white;
+        background-color: black;
+    }
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0 5rem 0;
+    gap: 2rem 0;
+}
+
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 30%;
+    padding: 0.5rem;
+    p{
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+    box-shadow: 1px 1px 10px black;
+    transition: transform 0.3s ease;
+    animation: fade 1s ease;
+}
+
+.recipe:hover{
+    transform: scale3d(1.1,1.1,1.1);
+}
+
+.contact-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    padding: 3%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.contact-container .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container input,textarea{
+    padding: 0.5rem;
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+.contact-container label{
+    margin-left: auto;
+}
+
+.about-container{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: justify;
+}
+
+.sign-up{
+    width: fit-content;
+    margin: 5% auto 10% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    h2{
+        text-align: center;
+    }
+}
+
+.sign-up form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 20.5rem;
+    button{
+        margin-left: auto;
+        margin-right: auto;
+        width: 10rem;
+    }
+}
+
+.sign-up .form-grp{
+    display: flex;
+}
+
+
+.sign-up input{
+    border: 1px solid black;
+    padding: 1%;
+    width: 15rem;
+    margin-left: auto;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .swiper{
+        height: 75%;
+    }
+}
